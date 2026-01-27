@@ -165,6 +165,7 @@ main .main-wrapper .heading-div .english-text {
   font-size: 14px;
   text-decoration: none;
   color: #000;
+  cursor: pointer;
 }
 .locations-outer-wrapper .location-outlet-div .right-div {
   gap: 8px;
