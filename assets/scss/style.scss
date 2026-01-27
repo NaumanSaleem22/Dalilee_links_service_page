@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    color: #396F86;
+    background-color: #D8E6EC;
+}
+
+main {
+    background-color: #F6F6F6;
+    min-height: 90vh;
+    padding: 24px 16px 36px;
+
+    .main-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .heading-div {
+            padding: 24px 16px;
+            text-align: center;
+
+            .arabic-text {
+                font-family: 'IBM Plex Sans Arabic', sans-serif;
+                font-weight: 700;
+                font-size: 24px;
+                color: #13A3DD;
+            }
+
+            .english-text {
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                font-weight: 600;
+                font-size: 20px;
+                color: #000;
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+.outer-cards-div {
+    padding: 38px 28px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+
+    @media(max-width: 575px) {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 8px;
+        padding: 24px 0px;
+    }
+
+    .card-link {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        background-color: white;
+        padding: 28px 22px;
+        border-radius: 8px;
+        transition: 0.2s ease all;
+
+        &:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #13A3DD;
+
+            p {
+                color: white !important;
+            }
+        }
+
+        @media(max-width: 575px) {
+            padding: 24px 4px;
+        }
+
+        .link-card-div {
+            .arabic-text {
+                font-family: 'IBM Plex Sans Arabic', sans-serif;
+                font-weight: 500;
+                font-size: 18px;
+                margin-top: 12px;
+                color: #13A3DD;
+                margin-bottom: 0;
+                transition: 0.2s ease all;
+
+                @media(max-width: 575px) {
+                    font-size: 16px;
+                }
+            }
+
+            .english-text {
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                font-weight: 600;
+                font-size: 16px;
+                color: #000;
+                margin-top: 6px;
+                transition: 0.2s ease all;
+
+                @media(max-width: 575px) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+#tasdeed-offices-accordion {
+    .accordion-item {
+        margin-bottom: 12px;
+        border-radius: 8px;
+
+        .accordion-header {
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+
+            .accordion-button:not(.collapsed) {
+                background-color: unset;
+            }
+
+            .accordion-button {
+                width: 100%;
+                justify-content: space-between;
+
+                padding: 16px 8px !important;
+
+                .inner-header {
+                    width: 100%;
+
+                    .branch-name {
+                        font-family: 'IBM Plex Sans Arabic', sans-serif;
+                        font-weight: 600;
+                        font-size: 12px;
+                        text-align: right;
+                    }
+
+                    .share-icon {
+                        img {
+                            max-width: 20px;
+                        }
+                    }
+
+                    .vr-line {
+                        font-size: 16px;
+                        margin-left: 7px;
+                        color: #b9b3b3;
+                    }
+                }
+            }
+        }
+
+        .accordion-body {
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
+            font-size: 12px;
+            padding: 16px 8px !important;
+        }
+    }
+}
+
+.locations-outer-wrapper {
+    background-color: white;
+    padding: 24px 8px;
+    width: 100%;
+    border-radius: 8px;
+
+
+    .location-outlet-div {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #E0E0E0;
+        }
+
+        .left-div {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            gap: 8px;
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .right-div {
+            gap: 8px;
+            display: flex;
+        }
+
+        .timing-div {
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+    }
+}
+
+.working-hours-wrapper {
+    .working-outer-div {
+        margin-top: 24px;
+        justify-content: space-between;
+        display: flex;
+
+        .arabic-text {
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
+            font-weight: 600;
+            font-size: 17px;
+            color: #13A3DD;
+        }
+
+        .english-text {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 500;
+            font-size: 17px;
+            color: #13A3DD;
+        }
+    }
+}
+
+
+.request-pickup-outer {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    text-align: center;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .arabic-text {
+        font-family: 'IBM Plex Sans Arabic', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        color: #13A3DD;
+        margin-top: 24px;
+        margin-bottom: 16px;
+    }
+
+    .english-text {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        color: #000;
+    }
+
+    .normal-arabic-text {
+        font-family: 'IBM Plex Sans Arabic', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #13A3DD; 
+    }
+
+    .normal-english-text {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #000;
+    }
+
+
+    .btn-theme {
+        margin-top: 16px;
+        background-color: #13A3DD;
+        color: white;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.2s ease all;
+        width: 100%;
+
+        &:hover {
+            background-color: #0e81a8;
+        }
+    }
+}
+
+.service-pill-outer {
+    background-color: white;
+    padding: 16px 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    img {
+        max-width: 24px;
+    }
+
+    .pill-text {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        color: #000;
+        margin-left: 8px;
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+    }
+
+    .label {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        color: #8E8E8E;
+    }
+}

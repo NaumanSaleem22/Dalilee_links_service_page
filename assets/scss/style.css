@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  color: #396F86;
+  background-color: #D8E6EC;
+}
+
+main {
+  background-color: #F6F6F6;
+  min-height: 90vh;
+  padding: 24px 16px 36px;
+}
+main .main-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main .main-wrapper .heading-div {
+  padding: 24px 16px;
+  text-align: center;
+}
+main .main-wrapper .heading-div .arabic-text {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #13A3DD;
+}
+main .main-wrapper .heading-div .english-text {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #000;
+  margin-top: 8px;
+}
+
+.outer-cards-div {
+  padding: 38px 28px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+@media (max-width: 575px) {
+  .outer-cards-div {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 8px;
+    padding: 24px 0px;
+  }
+}
+.outer-cards-div .card-link {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  background-color: white;
+  padding: 28px 22px;
+  border-radius: 8px;
+  transition: 0.2s ease all;
+}
+.outer-cards-div .card-link:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #13A3DD;
+}
+.outer-cards-div .card-link:hover p {
+  color: white !important;
+}
+@media (max-width: 575px) {
+  .outer-cards-div .card-link {
+    padding: 24px 4px;
+  }
+}
+.outer-cards-div .card-link .link-card-div .arabic-text {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 12px;
+  color: #13A3DD;
+  margin-bottom: 0;
+  transition: 0.2s ease all;
+}
+@media (max-width: 575px) {
+  .outer-cards-div .card-link .link-card-div .arabic-text {
+    font-size: 16px;
+  }
+}
+.outer-cards-div .card-link .link-card-div .english-text {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000;
+  margin-top: 6px;
+  transition: 0.2s ease all;
+}
+@media (max-width: 575px) {
+  .outer-cards-div .card-link .link-card-div .english-text {
+    font-size: 14px;
+  }
+}
+
+#tasdeed-offices-accordion .accordion-item {
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+#tasdeed-offices-accordion .accordion-item .accordion-header {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+#tasdeed-offices-accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  background-color: unset;
+}
+#tasdeed-offices-accordion .accordion-item .accordion-header .accordion-button {
+  width: 100%;
+  justify-content: space-between;
+  padding: 16px 8px !important;
+}
+#tasdeed-offices-accordion .accordion-item .accordion-header .accordion-button .inner-header {
+  width: 100%;
+}
+#tasdeed-offices-accordion .accordion-item .accordion-header .accordion-button .inner-header .branch-name {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: right;
+}
+#tasdeed-offices-accordion .accordion-item .accordion-header .accordion-button .inner-header .share-icon img {
+  max-width: 20px;
+}
+#tasdeed-offices-accordion .accordion-item .accordion-header .accordion-button .inner-header .vr-line {
+  font-size: 16px;
+  margin-left: 7px;
+  color: #b9b3b3;
+}
+#tasdeed-offices-accordion .accordion-item .accordion-body {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-size: 12px;
+  padding: 16px 8px !important;
+}
+
+.locations-outer-wrapper {
+  background-color: white;
+  padding: 24px 8px;
+  width: 100%;
+  border-radius: 8px;
+}
+.locations-outer-wrapper .location-outlet-div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.locations-outer-wrapper .location-outlet-div:not(:last-child) {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #E0E0E0;
+}
+.locations-outer-wrapper .location-outlet-div .left-div {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 8px;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+}
+.locations-outer-wrapper .location-outlet-div .right-div {
+  gap: 8px;
+  display: flex;
+}
+.locations-outer-wrapper .location-outlet-div .timing-div {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.working-hours-wrapper .working-outer-div {
+  margin-top: 24px;
+  justify-content: space-between;
+  display: flex;
+}
+.working-hours-wrapper .working-outer-div .arabic-text {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  color: #13A3DD;
+}
+.working-hours-wrapper .working-outer-div .english-text {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  color: #13A3DD;
+}
+
+.request-pickup-outer {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  text-align: center;
+}
+.request-pickup-outer img {
+  width: 100%;
+  height: 100%;
+}
+.request-pickup-outer .arabic-text {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #13A3DD;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+.request-pickup-outer .english-text {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #000;
+}
+.request-pickup-outer .normal-arabic-text {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #13A3DD;
+}
+.request-pickup-outer .normal-english-text {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+}
+.request-pickup-outer .btn-theme {
+  margin-top: 16px;
+  background-color: #13A3DD;
+  color: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease all;
+  width: 100%;
+}
+.request-pickup-outer .btn-theme:hover {
+  background-color: #0e81a8;
+}
+
+.service-pill-outer {
+  background-color: white;
+  padding: 16px 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.service-pill-outer img {
+  max-width: 24px;
+}
+.service-pill-outer .pill-text {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+  margin-left: 8px;
+}
+.service-pill-outer .pill-text a {
+  text-decoration: none;
+  color: #000;
+}
+.service-pill-outer .label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #8E8E8E;
+}/*# sourceMappingURL=style.css.map */
