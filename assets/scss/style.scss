@@ -13,7 +13,7 @@ footer {
 
 main {
     background-color: #F6F6F6;
-    min-height: 90vh;
+    // min-height: 90vh;
     padding: 24px 16px 36px;
 
     .main-wrapper {
@@ -311,6 +311,7 @@ main {
         a {
             text-decoration: none;
             color: #000;
+            font-size: 16px;
         }
     }
 
