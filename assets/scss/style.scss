@@ -70,6 +70,9 @@ main {
             p {
                 color: white !important;
             }
+            img{
+                // filter: brightness(100);
+            }
         }
 
         @media(max-width: 575px) {
@@ -102,6 +105,13 @@ main {
                 @media(max-width: 575px) {
                     font-size: 14px;
                 }
+            }
+            img{
+                max-width:80px;
+                aspect-ratio: 1;
+            }
+            .custom-img-icon{
+                max-width: 140px;aspect-ratio: unset;min-height: 80px; max-height: 80px; 
             }
         }
     }

@@ -97,6 +97,16 @@ main .main-wrapper .heading-div .english-text {
     font-size: 14px;
   }
 }
+.outer-cards-div .card-link .link-card-div img {
+  max-width: 80px;
+  aspect-ratio: 1;
+}
+.outer-cards-div .card-link .link-card-div .custom-img-icon {
+  max-width: 140px;
+  aspect-ratio: unset;
+  min-height: 80px;
+  max-height: 80px;
+}
 
 #tasdeed-offices-accordion .accordion-item {
   margin-bottom: 12px;
